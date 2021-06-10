@@ -32,7 +32,7 @@ import {{localImport (toEntityName entityName)}} from './{{toFileName fileName}}
 {{/inline}}
 {{#*inline "Entity"}}
 {{#indices}}{{> Index}}{{/indices~}}
-@EntityModel("{{sqlName}}"{{#schema}} ,{schema:"{{.}}"{{#if ../database}}, database:"{{../database}}"{{/if}} } {{/schema}})
+@Entity("{{sqlName}}"{{#schema}} ,{schema:"{{.}}"{{#if ../database}}, database:"{{../database}}"{{/if}} } {{/schema}})
 export {{defaultExport}} class {{toEntityName tscName}}{{#activeRecord}} extends BaseEntity{{/activeRecord}} {
 
 {{#columns}}{{> Column}}{{/columns~}}
@@ -41,8 +41,7 @@ export {{defaultExport}} class {{toEntityName tscName}}{{#activeRecord}} extends
 {{#if generateConstructor}}{{>Constructor entityName=tscName}}{{/if~}}
 }
 {{/inline}}
-import {BaseEntity,Column,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne,OneToMany,OneToOne,PrimaryColumn,PrimaryGeneratedColumn,RelationId} from "typeorm";
-import {EntityModel} from "@midwayjs/orm"
+import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne,OneToMany,OneToOne,PrimaryColumn,PrimaryGeneratedColumn,RelationId} from "typeorm";
 {{#fileImports}}{{> Import}}{{/fileImports}}
 
 {{> Entity}}
