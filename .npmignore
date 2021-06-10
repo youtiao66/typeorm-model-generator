@@ -27,3 +27,4 @@ dist/test/
 .eslintignore
 .tomg-config
 .github/
+yarn.lock

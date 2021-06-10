@@ -1,6 +1,6 @@
 {
-  "name": "typeorm-model-generator",
-  "version": "0.4.5",
+  "name": "mdl-gen-midway",
+  "version": "0.4.9",
   "description": "Generates models for TypeORM from existing databases.",
   "bin": "bin/typeorm-model-generator",
   "main": "./dist/src/library.js",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kononnable/typeorm-model-generator.git"
+    "url": "git+https://github.com/youtiao66/typeorm-model-generator"
   },
   "author": "Kononnable",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kononnable/typeorm-model-generator/issues"
   },
-  "homepage": "https://github.com/Kononnable/typeorm-model-generator#readme",
+  "homepage": "https://github.com/youtiao66/typeorm-model-generator#readme",
   "dependencies": {
     "change-case": "^4.1.2",
     "fs-extra": "^9.0.1",
